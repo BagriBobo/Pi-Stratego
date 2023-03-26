@@ -1,6 +1,14 @@
+import numpy as np
+import copy
 from pecas import Piece
 from tabuleiro import Board
 
+
+class Jogador:
+    def _init_(self, nome, color):
+        self.nome = nome
+        self.color = color
+        self.pieces = []
 
 board = Board()
 board.print_board()
